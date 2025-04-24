@@ -5,6 +5,8 @@ from itertools import cycle
 from zipfile import ZipFile
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 
 rDownloadURL = {"main": "https://bitbucket.org/xoceunder/x-ui/raw/master/main_xui_xoceunder.zip", "sub": "https://bitbucket.org/xoceunder/x-ui/raw/master/sub_xui_xoceunder.zip"}
 rPackages = ["libcurl4", "libxslt1-dev", "libgeoip-dev", "libonig-dev", "e2fsprogs", "wget", "mcrypt", "nscd", "htop", "zip", "unzip", "mc", "mariadb-server", "libpng16-16", "libzip5", "python3-paramiko", "python-is-python3"]
